@@ -14,19 +14,19 @@ and are sent for review as a [GitHub discussion](https://github.com/bazelbuild/b
 ### State diagram of the design process
 
 ```mermaid
-stateDiagram-v2    
+stateDiagram-v2
     ur: Under review
-    
+
     Draft --> ur
     ur --> Approved
     Approved --> Implemented
     Draft --> Dropped
     ur --> Dropped
     Approved --> Dropped
-    
+
     classDef success fill:#ded
     classDef failure fill:#fcc
-    
+
     class Implemented success
     class Dropped failure
 ```
@@ -36,7 +36,7 @@ stateDiagram-v2
 | Last updated | Title                                                                                                                                                     | Author(s) alias                               |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | 2023-10-09   | [Starlark Rules Roadmap](https://docs.google.com/document/d/12mYYtp2aJ6q1_yhguyMKh6onSZ2afJW9VctRz0hy6-Q/edit?usp=sharing)                                | [@comius](https://github.com/comius)          |
-| 2023-09-26   | [Bazelbuild Repositories Maintenance Guide](https://docs.google.com/document/d/1L1JFgjpZ7SrBinb24DC_5nTIELeYDacikcme-YcA7xs/edit?usp=sharing)             | [@comius](https://github.com/comius) and [@meteorcloudy](https://github.com/meteorcloudy)  | 
+| 2023-09-26   | [Bazelbuild Repositories Maintenance Guide](https://docs.google.com/document/d/1L1JFgjpZ7SrBinb24DC_5nTIELeYDacikcme-YcA7xs/edit?usp=sharing)             | [@comius](https://github.com/comius) and [@meteorcloudy](https://github.com/meteorcloudy)  |
 | 2023-08-30   | [Bazel Proto Rules](https://docs.google.com/document/d/1l5JrFOxjU1USWXoc_KeBIjBoae5nkaL5AqhNiHLYeyI/edit?usp=sharing)                                     | [@comius](https://github.com/comius)          |
 | 2023-08-01   | [Problems with Bazel's code coverage collection](https://docs.google.com/document/d/1JP-9pjiRBHmepgFzBI-U9G2nAzCWK5YoemGVVKmQsBM)                         | [@c-mita](https://github.com/c-mita)          |
 | 2023-07-27   | [A Guide to Skyframe StateMachines](https://bazel.build/contribute/statemachine-guide)                                                                    | [@aoeui](https://github.com/aoeui)            |
@@ -64,6 +64,7 @@ stateDiagram-v2
 |   2026-03-03 | [Hierarchical constraint settings](https://docs.google.com/document/d/1Lq-0aPBOT0cat1wcFbnPmurbyo05NpZXu0uGq12H_HE/edit?usp=sharing) | [@fmeum](https://github.com/fmeum) | Configurability |
 |   2025-11-09 | [Starlark type system design](https://docs.google.com/document/d/17bGpij0gPWJFbxHLKTTwfKj8dAldD1kr8MYAa0zMUMs/edit?usp=sharing)   | [@brandjon](https://github.com/brandjon)  | Starlark |
 |   2025-04-24 | [Linking on multiple platforms](https://docs.google.com/document/d/1zm1UOftT2xHQiNNxNO7XU_BOn2KrXjFlx5tl4QBVjV0/edit#heading=h.3b2hgzp0x4ct)   | [@comius](https://github.com/comius)  | C++ linking |
+|   2024-11-22 | [Copy Action](designs/2024-08-14-copy-action.md) | [@Silic0nS0ldier](https://github.com/Silic0nS0ldier) | Code Coverage |
 |   2024-08-29 | [A New Code Coverage API](https://docs.google.com/document/d/1HWGRrzE17rVuCpSniA1W3MeqKl-puX_sEzqUGyMxW5E) | [@c-mita](https://github.com/cmita) | Code Coverage |
 
 ### Approved
